@@ -1,6 +1,6 @@
 # Desafio Stoom - Backend
 
-###Geral
+### Geral
 O projeto foi desenvolvido utilizando a tecnologia Java com o framework Spring MVC.
 
 Existe um arquivo chamado `Database.sql` que cria a tabela necessária para o funcionamento da aplicação. 
@@ -8,7 +8,11 @@ O banco de dados utilizado é SQL Server.
 
 Para os testes unitários passarem, é preciso que a base esteja sem nenhum dado.
 
-###Endpoints
+Usar o comando `./gradlew build` para gerar uma build do projeto.
+
+Na classe `ConnectionManager.java`, alterar para seu usuário e senha do banco.
+
+### Endpoints
 
 O caminho padrão da API é `/stoom` e existem os seguintes endpoints:
 * `/create`:  Recebe um JSON com os dados do endereço. Um exemplo de JSON estará disponivel abaixo. Método: POST.
