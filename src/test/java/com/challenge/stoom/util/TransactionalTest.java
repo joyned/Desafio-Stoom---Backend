@@ -1,5 +1,6 @@
 package com.challenge.stoom.util;
 
+import com.challenge.stoom.core.StoomException;
 import com.challenge.stoom.repository.connection.ConnectionManager;
 
 import java.util.function.Consumer;
@@ -12,7 +13,7 @@ public class TransactionalTest {
             ConnectionManager.transactional();
             consumer.accept(obj);
         } catch (Exception e) {
-            e.printStackTrace();
+            throw new StoomException("Falha ao realizar transação.", e);
         } finally {
             ConnectionManager.rollback();
         }
