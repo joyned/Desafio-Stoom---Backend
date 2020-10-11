@@ -10,6 +10,8 @@ Para os testes unitários passarem, é preciso que a base esteja sem nenhum dado
 
 Usar o comando `./gradlew build` para gerar uma build do projeto.
 
+Na classe `ConnectionManager.java` alterar para seu usuário e senha do banco.
+
 ### Endpoints
 
 O caminho padrão da API é `/stoom` e existem os seguintes endpoints:
